@@ -1,0 +1,58 @@
+/* Change default margin, padding and border to 0 and none */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  /* Style body and headers */
+  body {
+    font-weight: 500;
+    color: #151311;
+    background-color: #789053;
+  }
+
+  /*Header*/
+
+header{
+    text-align: center;
+}
+
+li{
+    display:inline-block;
+}
+
+/*Container carrousel*/
+#container{
+    background-color: aquamarine;
+    height: 500px;
+    width: 95vw;
+    max-width: 650px;
+    margin: auto ;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+/* Style the sections slides */
+#slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    
+  }
+  
+  #slides>section,
+  #slides>div {
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 95vw;
+    max-width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    background: #ffffff;
+    
+  }
+  
