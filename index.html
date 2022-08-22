@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <script src="https://use.fontawesome.com/c7c28d92b9.js"></script>
 </head>
 <body>
   <header>
@@ -31,12 +33,54 @@
 </section>
 
 <!--Play section-->
-<section id="game_section">
-    <p>For now we have this, third section</p>
+<section id="game-section">
+   
+    <div id="enemy">
+      <h3> Enemy's choice</h3>
+      <div id="enemy-display"></div>
+    </div> 
+     <!--Enemy's life-->
+    <div id="enemy-life">
+      <p>Enemy's life <span id="enemy-life-counter">0</span></p>
+    </div>
+
+    <div>
+    <h4 id="result"> Text explaining result</h4>
+    <h5 id="result-text"></h5>
+    </div>
+
+    <div id="user-area">
+      <h3> Your choice</h3>
+      <!--Weapon selection-->
+      <div id="user-display">
+      </div>
+        <div class="weapon-selection">
+          <button data-type="rock" >
+            <i class="fa fa-hand-rock-o"></i>
+          </button>
+          <button data-type="paper" >
+            <i  class="fa fa-hand-paper-o" aria-hidden="true"></i>
+          </button>
+          <button data-type="scissor">
+            <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+          </button>
+          <button data-type="lizzard">
+            <i class="fa fa-hand-lizard-o" aria-hidden="true"></i> 
+          </button>
+          <button data-type="spock" >
+            <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+          </button>
+      </div>
+      <!--User's life-->
+      <div id="user-life">
+        <p>Your life <span id="user-life-counter">0</span></p>
+    </div> 
+
 </section>
 
 </div>
 </div>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
