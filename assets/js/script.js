@@ -127,12 +127,16 @@ function enemyWeapon(){
 function userWin(){
     let oldScore = parseInt(document.getElementById('user-life-counter').innerText);
     document.getElementById('user-life-counter').innerText = ++oldScore;
+    let health = document.getElementById("enemy-health")
+    health.value -= 10;
     document.getElementById('result-text').innerText = 'VICTORY';
 }
 
 function enemyWin(){
     let oldScore = parseInt(document.getElementById('enemy-life-counter').innerText);
     document.getElementById('enemy-life-counter').innerText = ++oldScore;
+    let health = document.getElementById("user-health")
+    health.value -= 10;
     document.getElementById('result-text').innerText = 'DEFEAT';
 }
 
