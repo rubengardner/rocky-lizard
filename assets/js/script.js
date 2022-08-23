@@ -25,6 +25,7 @@ function battle(weapon1, weapon2){
 
     if(weapon1 === weapon2){
        document.getElementById('result-text').innerText="It's a draw! Play again.";
+       document.getElementById('result').innerText='';
     }
     //Weapon election: rock
     else if(weapon1 === 'rock' && weapon2 === 'paper'){
