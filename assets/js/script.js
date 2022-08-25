@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName('button');
+    let buttons = document.getElementsByClassName('game-button');
 
     for (let button of buttons){
         button.addEventListener("click", function(){
@@ -125,19 +125,24 @@ function enemyWeapon(){
 }
 
 function userWin(){
-    let oldScore = parseInt(document.getElementById('user-life-counter').innerText);
-    document.getElementById('user-life-counter').innerText = ++oldScore;
     let health = document.getElementById("enemy-health")
+    let logoUser=  document.getElementById('user-display');
+    let logoEnemy = document.getElementById('enemy-display');
     health.value -= 10;
     document.getElementById('result-text').innerText = 'VICTORY';
+    logoUser.style.color="green";
+    logoEnemy.style.color="red";
+    
 }
 
 function enemyWin(){
-    let oldScore = parseInt(document.getElementById('enemy-life-counter').innerText);
-    document.getElementById('enemy-life-counter').innerText = ++oldScore;
-    let health = document.getElementById("user-health")
+    let health = document.getElementById("user-health");
+    let logoUser=  document.getElementById('user-display');
+    let logoEnemy = document.getElementById('enemy-display');
     health.value -= 10;
     document.getElementById('result-text').innerText = 'DEFEAT';
+    logoUser.style.color="red";
+    logoEnemy.style.color="green";
 }
 
 function displayUserWeapon(weapon){
@@ -169,3 +174,19 @@ function displayEnemyWeapon(weapon){
     } else {
         alert('Unknown weapon2');
 }}
+
+//Sleep fucntion code: https://www.sitepoint.com/delay-sleep-pause-wait/
+function sleep(miliseconds) {
+    var currentTime = new Date().getTime();
+ 
+    while (currentTime + miliseconds >= new Date().getTime()) {
+    }
+ }
+
+ function openPopup() {   
+       document.getElementById("game-rules").style.visibility = "visible";
+    }
+
+function closePopup() {   
+    document.getElementById("game-rules").style.visibility = "hidden";
+}

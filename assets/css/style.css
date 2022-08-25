@@ -56,20 +56,85 @@ li{
     
   }
   
-  /* Icons*/
+  
 /* Game section*/
 #game-section{
   text-align: center;
 }
 
 #enemy{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #user-area{
- margin-top: 100px;
+ margin-top: 50px;
 }
 
 #result-area{
-  margin-top: 100px;
+  margin-top: 80px;
+}
+
+/* Icons*/
+.game-button{
+  background-color: transparent;
+  font-size: 200%;
+  padding: 5px;
+  margin: 15px 15px 15px 0;
+ 
+  border-radius: 10%;
+  cursor:cell;
+}
+
+.display-weapons{
+  font-size: 200%;
+  padding: 5px;
+  color:blue;
+}
+
+
+/*Health bar  code:https://css-tricks.com/html5-progress-element/*/
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f44);
+
+    border-radius: 15px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/*Pop up rules*/
+#rules-image{
+  
+  height: 300px;
+}
+#game-rules{
+    visibility: hidden;
+    position:absolute;
+    top: 20%;
+    left:28%;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    height: 350px;
+  }
+
+#close-game-rules{
+  clear:both;
+  position:absolute;
+  left: 40%;
+  bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }

@@ -37,45 +37,53 @@
    
     <div id="enemy">
       <h3> Enemy's choice</h3>
-      <div id="enemy-display"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+      <div id="enemy-display" class="display-weapons"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
      <!--Enemy's life-->
     <div id="enemy-life">
-      <p>Enemy's life <span id="enemy-life-counter">0</span></p>
       <progress id="enemy-health" value="100" max="100"></progress>
     </div>
   </div> 
 
     <div id="result-area">
-    <h4 id="result"> HEllo</h4>
-    <h5 id="result-text"></h5>
+    <h3 id="result"> Waiting for you're move</h3>
+    <p id="result-text">...</p>
     </div>
 
     <div id="user-area">
       <h3> Your choice</h3>
-      <!--Weapon selection-->
-      <div id="user-display"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-        <div class="weapon-selection">
-          <button data-type="rock" >
+      <!--Weapon selection display-->
+      <div id="user-display" class="display-weapons" ><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+      <!--User's life-->
+      <div id="user-life">
+        <!--Weapon selection buttons-->
+        <progress id="user-health" value="100" max="100"></progress>
+    </div>   
+      <div class="weapon-selection">
+          <button data-type="rock" class="game-button">
             <i class="fa fa-hand-rock-o"></i>
           </button>
-          <button data-type="paper" >
+          <button data-type="paper" class="game-button">
             <i  class="fa fa-hand-paper-o" aria-hidden="true"></i>
           </button>
-          <button data-type="scissor">
+          <button data-type="scissor" class="game-button">
             <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
           </button>
-          <button data-type="lizard">
+          <button data-type="lizard" class="game-button">
             <i class="fa fa-hand-lizard-o" aria-hidden="true"></i> 
           </button>
-          <button data-type="spock" >
+          <button data-type="spock" class="game-button">
             <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
           </button>
       </div>
-      <!--User's life-->
-      <div id="user-life">
-        <p>Your life <span id="user-life-counter">0</span></p>
-        <progress id="user-health" value="100" max="100"></progress>
-    </div> 
+  
+  <button class="pop-up-button" id="open-game-rules" onclick="openPopup()">?</button>
+
+  <!--Pop up displaying the the rules-->
+    <div class="pop-up" id="game-rules">
+     <h3>Who beats who?</h3>
+        <img src="assets/media/RPSLS.webp" id="rules-image" alt="Rules of the game">
+        <button id="close-game-rules" onclick="closePopup()">Close</button>
+    </div>
 
 </section>
 
