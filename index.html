@@ -16,7 +16,7 @@
         <li><a href="#home-section"> Home </a> </li>
         <li><a href="#instructions-section">Instructions </a></li>
         <li><a href="#game-section">Let's play! </a></li>
-        <li><a >Feedback</a></li>
+        <li><a href="#feedback-section">Feedback</a></li>
     </ul>
   </header>
 <!--Scroll container-->
@@ -85,6 +85,50 @@
         <img src="assets/media/RPSLS.webp" id="rules-image" alt="Rules of the game">
         <button id="close-game-rules" onclick="closePopup()">Close</button>
     </div>
+</section>
+
+<section id="feedback-section">
+  <div id="feedback-form">
+    <form action="https://formdump.codeinstitute.net" method="POST">
+        <h2>Feedback</h2>
+        <br>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="full-name" class="input-form" required>
+        <br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" class="input-form" required>
+        <br>
+        <label for="comment">Comment</label>
+        <br>
+        <textarea id="comment" name="comment" rows="3" class="input-form" required></textarea>
+        <br>
+
+        <label for="user-experience">Poor 1 - Good 5:</label>
+        <br>
+        <label for="very-poor"> 1 - </label>
+        <label for="poor"> 2 - </label>
+        <label for="neutral">3 -</label>
+        <label for="good"> 4 -</label>
+        <label for="very-good"> 5 </label>
+        <br>
+        <input type="radio" id="very-poor" name="user-experience" value="1">
+        
+        <input type="radio" id="poor" name="user-experience" value="2">
+        
+        <input type="radio" id="neutral" name="user-experience" value="3">
+        
+        <input type="radio" id="good" name="user-experience" value="4">
+        
+        <input type="radio" id="very-good" name="user-experience" value="5">
+        
+        <br>
+        <button class="btn" type="submit">Send Feedback</button>
+        
+    </form>
+</div>
 
 </section>
 

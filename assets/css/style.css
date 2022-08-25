@@ -138,3 +138,23 @@ progress[value]::-webkit-progress-value {
   padding: 5px;
   border-radius: 5px;
 }
+
+/*Feedback section*/
+#feedback-section{
+  text-align: center;
+}
+
+.input-form {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+  background-color:#649B92;
+  padding: 10px 0 10px 0;
+  width:50%;
+  margin:10px 0 10px 0;
+ }
+
+ label{
+  padding: 10px 0 10px 0;
+  
+  clear: both;
+ }
