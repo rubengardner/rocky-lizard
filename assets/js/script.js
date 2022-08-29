@@ -129,21 +129,35 @@ function userWin(){
     let logoUser=  document.getElementById('user-display');
     let logoEnemy = document.getElementById('enemy-display');
     health.value -= 10;
+  
+    if (health.value === 0){
+        let victoryPopup= document.getElementById("game-result");
+        let message= document.getElementById("result-message");
+        victoryPopup.style.visibility='visible';
+        message.innerText="You won!";
+       
+    }else{
     document.getElementById('result-text').innerText = 'VICTORY';
     logoUser.style.color="green";
     logoEnemy.style.color="red";
-    
-}
+    }}
 
 function enemyWin(){
     let health = document.getElementById("user-health");
     let logoUser=  document.getElementById('user-display');
     let logoEnemy = document.getElementById('enemy-display');
     health.value -= 10;
-    document.getElementById('result-text').innerText = 'DEFEAT';
-    logoUser.style.color="red";
-    logoEnemy.style.color="green";
-}
+
+    if (health.value === 0){
+        let defeatPopup =  document.getElementById("game-result");
+        let message= document.getElementById("result-message");
+        defeatPopup.style.visibility='visible';
+        message.innerText="You lost!";
+    }else{
+        document.getElementById('result-text').innerText = 'DEFEAT';
+        logoUser.style.color="red";
+        logoEnemy.style.color="green";
+    }}
 
 function displayUserWeapon(weapon){
     if (weapon === "rock") {
@@ -175,13 +189,6 @@ function displayEnemyWeapon(weapon){
         alert('Unknown weapon2');
 }}
 
-//Sleep fucntion code: https://www.sitepoint.com/delay-sleep-pause-wait/
-function sleep(miliseconds) {
-    var currentTime = new Date().getTime();
- 
-    while (currentTime + miliseconds >= new Date().getTime()) {
-    }
- }
 
  function openPopup() {   
        document.getElementById("game-rules").style.visibility = "visible";
@@ -189,4 +196,25 @@ function sleep(miliseconds) {
 
 function closePopup() {   
     document.getElementById("game-rules").style.visibility = "hidden";
+}
+
+function playAgain(){
+    let enemyHealth= document.getElementById("enemy-health")
+    let userHealth  = document.getElementById("user-health")
+    enemyHealth.value=50;
+    userHealth.value=50;
+    
+
+    document.getElementById('result').innerText = "Waiting for you're move";
+    document.getElementById('result-text').innerText = '...';
+
+    let weaponEnemy=  document.getElementById('enemy-display');
+    let weaponUser=  document.getElementById('user-display');
+    weaponEnemy.style.color="blue";
+    weaponUser.style.color="blue";
+    weaponEnemy.innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`;
+    weaponUser.getElementById('user-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`;
+
+    document.getElementById("game-result").style.visibility = "hidden";
+
 }

@@ -41,7 +41,7 @@
       <div id="enemy-display" class="display-weapons"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
      <!--Enemy's life-->
     <div id="enemy-life">
-      <progress id="enemy-health" value="100" max="100"></progress>
+      <progress id="enemy-health" value="50" max="50"></progress>
     </div>
   </div> 
 
@@ -57,8 +57,8 @@
       <!--User's life-->
       <div id="user-life">
         <!--Weapon selection buttons-->
-        <progress id="user-health" value="100" max="100"></progress>
-    </div>   
+        <progress id="user-health" value="50" max="50"></progress>
+      </div>   
       <div class="weapon-selection">
           <button data-type="rock" class="game-button">
             <i class="fa fa-hand-rock-o"></i>
@@ -75,17 +75,24 @@
           <button data-type="spock" class="game-button">
             <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
           </button>
-      </div>
-  
+      </div>  
   <button class="pop-up-button" id="open-game-rules" onclick="openPopup()">?</button>
-
+</div>
   <!--Pop up displaying the the rules-->
     <div class="pop-up" id="game-rules">
      <h3>Who beats who?</h3>
         <img src="assets/media/RPSLS.webp" id="rules-image" alt="Rules of the game">
-        <button id="close-game-rules" onclick="closePopup()">Close</button>
+        <button id="close-game-rules" class="close-popup" onclick="closePopup()">Close</button>
     </div>
+
+    <div  id="game-result">
+      <h2 id="result-message">hwllo world</h2>
+        
+         <button id="close-game-result" class="close-popup" onclick="playAgain()">Play again!</button>
+     </div>
+ 
 </section>
+
 
 <section id="feedback-section">
   <div id="feedback-form">

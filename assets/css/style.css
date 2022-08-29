@@ -9,7 +9,7 @@
   body {
     font-weight: 500;
     color: #151311;
-    background-color: #789053;
+    background-color: #F5D33F;
   }
 
   /*Header*/
@@ -112,31 +112,70 @@ progress[value]::-webkit-progress-value {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
+/*Pop ups:*/
 /*Pop up rules*/
+
+.close-popup{
+  clear:both;
+  position:absolute;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 #rules-image{
-  
   height: 300px;
 }
+
 #game-rules{
-    visibility: hidden;
-    position:absolute;
-    top: 20%;
-    left:28%;
-    z-index: 1;
-    border-radius: 15px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    height: 350px;
+  visibility: hidden;
+  position:absolute;
+  top: 20%;
+  left:28%;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  height: 350px;
   }
 
 #close-game-rules{
-  clear:both;
-  position:absolute;
   left: 40%;
   bottom: 10px;
-  padding: 5px;
-  border-radius: 5px;
+}
+
+/*Game outcome pop up*/
+#game-result{
+  visibility: hidden;
+  position:absolute;
+  top: 5%;
+  left:5%;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  height: 90%;
+  width: 90%
+}
+
+#result-message{
+  position: absolute;
+  top:40%;
+  width:30%;
+  left: 35%;
+  text-align: center;
+  font-size: 24pt;
+}
+
+#close-game-result{
+  position: absolute;
+  width:30%;
+  left: 35%;
+  bottom: 15px;
+  height: 50px;
+  font-size: 16pt;
 }
 
 /*Feedback section*/
