@@ -86,7 +86,7 @@ li a:active {
     max-width: 650px;
     height: 500px;
     border-radius: 10px;
-    background-color: rgba(240, 46, 170, 0.1);
+    background-color: rgba(240, 46, 170, 0.2);
     
   }
   
@@ -117,15 +117,12 @@ li a:active {
 /* Icons*/
 .game-button{
   background-color: transparent;
-
- 
   margin: 15px 15px 15px 0;
-
   font-size: 25px;
-  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  background-color: white;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
