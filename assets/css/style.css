@@ -10,7 +10,7 @@
   body {
     font-weight: 500;
     color: #151311;
-    background-color: #007663;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     font-family: 'Teko', sans-serif;
   }
 
@@ -31,15 +31,33 @@ li{
 
 li a{
   padding: 5px;
-  font-size: 18pt;
-  background-color: #C3FCF2;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #fff;
 }
+
+li a:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
 
 /*Container carrousel*/
 #container{
-    background-color: aquamarine;
+    background-color: white;
     height: 500px;
     width: 95vw;
     max-width: 650px;
@@ -68,7 +86,7 @@ li a{
     max-width: 650px;
     height: 500px;
     border-radius: 10px;
-    background: #ffffff;
+    background-color: rgba(240, 46, 170, 0.1);
     
   }
   
@@ -77,15 +95,19 @@ li a{
 #game-section{
   text-align: center;
   font-size: 14pt;
+  color: #730041;
+  
 }
 
 #enemy{
   margin-top: 5px;
   
+  
 }
 
 #user-area{
  margin-top: 25px;
+ 
 }
 
 #result-area{
@@ -118,13 +140,16 @@ li a{
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
+  background-color: rgba(240, 46, 170, 0.2);
 }
+
+
 
 
 .display-weapons{
   font-size: 200%;
-
-  color:blue;
+  color:#730041;
+  
 }
 
 
@@ -142,7 +167,7 @@ progress[value]::-webkit-progress-value {
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #09c, #f44);
+	   -webkit-linear-gradient(left,rgba(240, 46, 170, 0.5), #0FA300);
 
     border-radius: 15px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;

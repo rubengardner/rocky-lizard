@@ -29,8 +29,8 @@ function battle(weapon1, weapon2){
 
        let logoUser=  document.getElementById('user-display');
        let logoEnemy = document.getElementById('enemy-display');  
-        logoUser.style.color ='blue';
-        logoEnemy.style.color ='blue';
+        logoUser.style.color ='#730041';
+        logoEnemy.style.color ='#730041';
 
     }
     //Weapon selection: ROCK
@@ -143,8 +143,8 @@ function userWin(){
        
     }else{
     document.getElementById('result-text').innerText = 'VICTORY';
-    logoUser.style.color="green";
-    logoEnemy.style.color="red";
+    logoUser.style.color="#BD7500";
+    logoEnemy.style.color="#BBA5B0";
     }}
 
 function enemyWin(){
@@ -160,8 +160,8 @@ function enemyWin(){
         message.innerText="You lost!";
     }else{
         document.getElementById('result-text').innerText = 'DEFEAT';
-        logoUser.style.color="red";
-        logoEnemy.style.color="green";
+        logoUser.style.color="#BBA5B0";
+        logoEnemy.style.color="#BD7500";
     }}
 
 function displayUserWeapon(weapon){
@@ -217,8 +217,8 @@ function playAgain(){
     document.getElementById('result-text').innerText = '...';
 
     
-    weaponEnemy.style.color="blue";
-    weaponUser.style.color="blue";
+    weaponEnemy.style.color="#730041";
+    weaponUser.style.color="#730041";
     weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
     weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
 
