@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 /* Change default margin, padding and border to 0 and none */
 * {
     margin: 0;
@@ -9,7 +10,8 @@
   body {
     font-weight: 500;
     color: #151311;
-    background-color: #F5D33F;
+    background-color: #007663;
+    font-family: 'Teko', sans-serif;
   }
 
   /*Header*/
@@ -18,8 +20,21 @@ header{
     text-align: center;
 }
 
+li, a{
+  display:inline-block;
+  text-decoration: none;
+}
+
 li{
-    display:inline-block;
+  padding: 10px;
+}
+
+li a{
+  padding: 5px;
+  font-size: 18pt;
+  background-color: #C3FCF2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 /*Container carrousel*/
@@ -77,13 +92,33 @@ li{
 /* Icons*/
 .game-button{
   background-color: transparent;
-  font-size: 200%;
-  padding: 5px;
+
+ 
   margin: 15px 15px 15px 0;
  
-  border-radius: 10%;
-  cursor:cell;
+  
+
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.game-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
 
 .display-weapons{
   font-size: 200%;
@@ -115,6 +150,36 @@ progress[value]::-webkit-progress-value {
 /*Pop ups:*/
 /*Pop up rules*/
 
+#open-game-rules{
+  
+ 
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#open-game-rules:hover {
+  background-color: rgb(249,250,251);
+}
+
+#open-game-rules:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#open-game-rules:focus-visible {
+  box-shadow: none;
+}
+
 .close-popup{
   clear:both;
   position:absolute;
@@ -131,16 +196,18 @@ progress[value]::-webkit-progress-value {
   visibility: hidden;
   position:absolute;
   top: 20%;
-  left:28%;
+  left:10%;
   z-index: 1;
   border-radius: 15px;
   background-color: #555;
   color: #fff;
   text-align: center;
   height: 350px;
+  width:80%;
   }
 
 #close-game-rules{
+  width:20%;
   left: 40%;
   bottom: 10px;
 }

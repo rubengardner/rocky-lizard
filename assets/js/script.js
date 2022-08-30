@@ -19,15 +19,21 @@ function runGame(weaponElection){
     displayUserWeapon(weaponElection);
     displayEnemyWeapon(enemyElection);
 }
-
+//comment
 function battle(weapon1, weapon2){
     
 
     if(weapon1 === weapon2){
        document.getElementById('result').innerText="Play again!";
        document.getElementById('result-text').innerText='DRAW';
+
+       let logoUser=  document.getElementById('user-display');
+       let logoEnemy = document.getElementById('enemy-display');  
+        logoUser.style.color ='blue';
+        logoEnemy.style.color ='blue';
+
     }
-    //Weapon election: rock
+    //Weapon selection: ROCK
     else if(weapon1 === 'rock' && weapon2 === 'paper'){
        enemyWin(); 
        document.getElementById('result').innerText='Paper covers Rock';
@@ -44,7 +50,7 @@ function battle(weapon1, weapon2){
         enemyWin();
         document.getElementById('result').innerText='Spock vaporizes Rock';
     }
-    //weapon election: paper
+    //weapon selection: PAPER
     else if(weapon1 === 'paper' && weapon2 === 'rock'){
         userWin();
         document.getElementById('result').innerText= 'Paper covers Rock';
@@ -61,8 +67,7 @@ function battle(weapon1, weapon2){
         userWin();
         document.getElementById('result').innerText= 'Paper disproves Spock';
     }
-
-    // Weapon election: scissor
+    // Weapon selection: scissor
     else if(weapon1 === 'scissor' && weapon2 === 'rock'){
         enemyWin();
         document.getElementById('result').innerText= 'Rock crushes Scissors';
@@ -79,7 +84,7 @@ function battle(weapon1, weapon2){
         enemyWin();
         document.getElementById('result').innerText= 'Spock smashes Scissors';
     }
-    // Weapon election: LIZARD
+    // Weapon selection: LIZARD
     else if(weapon1 === 'lizard' && weapon2 === 'rock'){
         enemyWin();
         document.getElementById('result').innerText='Rock crushes Lizard';
@@ -96,7 +101,7 @@ function battle(weapon1, weapon2){
         userWin();
         document.getElementById('result').innerText= 'Lizard poisons Spock';
     }
-    //Weapon election: SPOCK
+    //Weapon selection: SPOCK
     else if(weapon1 === 'spock' && weapon2 === 'rock'){
         userWin();
         document.getElementById('result').innerText= 'Spock vaporizes Rock';
@@ -201,6 +206,9 @@ function closePopup() {
 function playAgain(){
     let enemyHealth= document.getElementById("enemy-health")
     let userHealth  = document.getElementById("user-health")
+    let weaponEnemy=  document.getElementById('enemy-display');
+    let weaponUser=  document.getElementById('user-display');
+
     enemyHealth.value=50;
     userHealth.value=50;
     
@@ -208,12 +216,11 @@ function playAgain(){
     document.getElementById('result').innerText = "Waiting for you're move";
     document.getElementById('result-text').innerText = '...';
 
-    let weaponEnemy=  document.getElementById('enemy-display');
-    let weaponUser=  document.getElementById('user-display');
+    
     weaponEnemy.style.color="blue";
     weaponUser.style.color="blue";
-    weaponEnemy.innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`;
-    weaponUser.getElementById('user-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`;
+    weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
+    weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
 
     document.getElementById("game-result").style.visibility = "hidden";
 
