@@ -30,77 +30,77 @@
 
 <!--Instrucctions section-->
 <section id="instructions-section">
-
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th></th>
-        <th>Rock</th>
-        <th>Paper</th>
-        <th>Scissor</th>
-        <th>Lizzard</th>
-        <th>Spock</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Rock</td>
-        <td>1</td>
-        <td>-</td>
-        <td>L</td>
-        <td>W</td>
-        <td>W</td>
-        <td>L</td>
-      </tr>
-      <tr>
-        <td>Paper</td>
-        <td>2</td>
-        <td>W</td>
-        <td>-</td>
-        <td>L</td>
-        <td>L</td>
-        <td>W</td>
-      </tr>
-      <tr>
-        <td>Scissor</td>
-        <td>3</td>
-        <td>L</td>
-        <td>W</td>
-        <td>-</td>
-        <td>W</td>
-        <td>L</td>
-      </tr>
-      <tr>
-        <td>Lizzard</td>
-        <td>4</td>
-        <td>L</td>
-        <td>W</td>
-        <td>L</td>
-        <td>-</td>
-        <td>W</td>
-      </tr>
-      <tr>
-        <td>Spock</td>
-        <td>5</td>
-        <td>W</td>
-        <td>L</td>
-        <td>W</td>
-        <td>L</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-    </table>
-    <p>For now we have this, second section</p>
+  <h2>Instructions</h2>
+  <p>This is an extended version of the clasical "Rock, Paper & Scissors" game. In this version there are 5 options to choose as a weapon, adding "Lizzard" and "Spock" to the selection. The first player to win 5 rounds will become the champion! Underneath you can check all the possible outcomes in battle, be prepared, you're enemy is waiting!</p>
+  
+<!--Table-->
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td class="enemy-style">Enemy</td>
+      <td class="enemy-style">Rock</td>
+      <td class="enemy-style">Paper</td>
+      <td class="enemy-style">Scissor</td>
+      <td class="enemy-style">Lizzard</td>
+      <td class="enemy-style">Spock</td>
+    </tr>
+    <tr>
+      <td class="user-style">User </td>
+      <td></td>
+      <td><i class="fa fa-hand-rock-o" aria-hidden="true"></i></td>
+      <td><i  class="fa fa-hand-paper-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-hand-lizard-o" aria-hidden="true"></i> </td>
+      <td><i class="fa fa-hand-spock-o" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td class="user-style">Rock</td>
+      <td><i class="fa fa-hand-rock-o" aria-hidden="true"></i></td>
+      <td>-</td>
+      <td class="enemy-style">L</td>
+      <td class="user-style">W</td>
+      <td class="user-style">W</td>
+      <td class="enemy-style">L</td>
+    </tr>
+    <tr>
+      <td class="user-style">Paper</td>
+      <td><i  class="fa fa-hand-paper-o" aria-hidden="true"></i></td>
+      <td class="user-style">W</td>
+      <td>-</td>
+      <td class="enemy-style">L</td>
+      <td class="enemy-style">L</td>
+      <td class="user-style">W</td>
+    </tr>
+    <tr>
+      <td class="user-style">Scissor</td>
+      <td><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></td>
+      <td class="enemy-style">L</td>
+      <td class="user-style">W</td>
+      <td>-</td>
+      <td class="user-style">W</td>
+      <td class="enemy-style">L</td>
+    </tr>
+    <tr>
+      <td class="user-style">Lizzard</td>
+      <td><i class="fa fa-hand-lizard-o" aria-hidden="true"></i> </td>
+      <td class="enemy-style">L</td>
+      <td class="user-style">W</td>
+      <td class="enemy-style">L</td>
+      <td>-</td>
+      <td class="user-style">W</td>
+    </tr>
+    <tr>
+      <td class="user-style">Spock</td>
+      <td> <i class="fa fa-hand-spock-o" aria-hidden="true"></i></td>
+      <td class="user-style">W</td>
+      <td class="enemy-style">L</td>
+      <td class="user-style">W</td>
+      <td class="enemy-style">L</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+  </table>
 </section>
 
 <!--Play section-->
@@ -131,7 +131,7 @@
       </div>   
       <div class="weapon-selection">
           <button data-type="rock" class="game-button">
-            <i class="fa fa-hand-rock-o"></i>
+            <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
           </button>
           <button data-type="paper" class="game-button">
             <i  class="fa fa-hand-paper-o" aria-hidden="true"></i>

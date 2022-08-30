@@ -87,16 +87,52 @@ li a:active {
     height: 500px;
     border-radius: 10px;
     background-color: rgba(240, 46, 170, 0.2);
-    
   }
-  
-  
+ 
+  /*Instruccions section */
+#instructions-section{
+  text-align: center;
+}
+
+#instructions-section h2{
+  position: absolute;
+  top:20px;
+  width:30%;
+  left:35%;
+
+}
+#instructions-section p{
+  width:70%;
+  position: absolute;
+  top:60px;
+  left: 15%;
+  font-size: 14pt;
+  padding:10px;
+  border:#000 solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+table{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  bottom:60px;
+  font-size: 14pt;
+}
+/*#4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+.user-style{
+  color:#0FA300;
+}
+
+.enemy-style{
+  color: #730041;
+}
+
 /* Game section*/
 #game-section{
   text-align: center;
   font-size: 14pt;
-  color: #730041;
-  
+  color: #730041;  
 }
 
 #enemy{
@@ -153,20 +189,16 @@ li a:active {
 /*Health bar  code:https://css-tricks.com/html5-progress-element/*/
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
-  border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border:#000 2px solid;
 }
 progress[value]::-webkit-progress-value {
   background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left,rgba(240, 46, 170, 0.5), #0FA300);
 
-    border-radius: 15px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
