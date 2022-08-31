@@ -6,54 +6,51 @@
     border: none;
   }
   
-  /* Style body and headers */
-  body {
-    font-weight: 500;
-    color: #151311;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    font-family: 'Teko', sans-serif;
-  }
-
-  /*Header*/
-
-header{
-    text-align: center;
+  /* Style body, headers and Buttons */
+body {
+  font-weight: 500;
+  color: #000;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  font-family: 'Teko', sans-serif;
 }
 
-li, a{
-  display:inline-block;
-  text-decoration: none;
-}
-
-li{
-  padding: 10px;
-}
-
-li a{
-  padding: 5px;
-  font-size: 16px;
-  letter-spacing: 2px;
+.button-style{
+  margin: 15px 15px 15px 0;
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  background-color: white;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
+  user-select:none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  background-color: #fff;
-}
-
-li a:active {
+  position: relative;
+  }
+  
+.button-style:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
+  background-color: rgba(240, 46, 170, 0.2);
+}
+  
+  /*Header*/
+
+header{
+  text-align: center;
+  padding: 10px;
 }
 
-
+header li{
+  display:inline-block;
+  text-decoration: none;
+  font-size: 12pt;
+  padding: 10px;
+}
 
 /*Container carrousel*/
 #container{
@@ -86,7 +83,7 @@ li a:active {
     max-width: 650px;
     height: 500px;
     border-radius: 10px;
-    background-color: rgba(240, 46, 170, 0.2);
+    background-color: rgba(240, 46, 170, 0.4);
   }
  
   /*Instruccions section */
@@ -110,6 +107,7 @@ li a:active {
   padding:10px;
   border:#000 solid 2px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 table{
@@ -119,7 +117,7 @@ table{
   bottom:60px;
   font-size: 14pt;
 }
-/*#4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+
 .user-style{
   color:#0FA300;
 }
@@ -132,58 +130,55 @@ table{
 #game-section{
   text-align: center;
   font-size: 14pt;
-  color: #730041;  
+  
 }
+
 
 #enemy{
-  margin-top: 5px;
-  
-  
-}
-
-#user-area{
- margin-top: 25px;
- 
+  border:#000 2px solid;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top:20px;
+  padding:5px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #result-area{
-  margin-top: 50px;
+  width: 50%;
+  position: absolute;
+  left: 26%;
+  
+  top:160px;
+}
+
+#user-area{
+  border:#000 2px solid;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top:225px;
+  padding:5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#weapon-area{
+  position: absolute;
+  width:80%;
+  left: 12%;
+  top:350px;
 }
 
 /* Icons*/
-.game-button{
-  background-color: transparent;
-  margin: 15px 15px 15px 0;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  background-color: white;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.game-button:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-  background-color: rgba(240, 46, 170, 0.2);
-}
-
-
-
 
 .display-weapons{
   font-size: 200%;
   color:#730041;
   
 }
+
+
+
 
 
 /*Health bar  code:https://css-tricks.com/html5-progress-element/*/
@@ -205,36 +200,40 @@ progress[value]::-webkit-progress-value {
 /*Pop ups:*/
 /*Pop up rules*/
 
+/*
 .close-popup{
   clear:both;
   position:absolute;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
-}
+}*/
 
 #rules-image{
-  height: 300px;
+  width: 65%;
+  position: absolute;
+  left: 17.5%;
 }
 
 #game-rules{
   visibility: hidden;
   position:absolute;
-  top: 20%;
+  top: 5%;
   left:10%;
   z-index: 1;
   border-radius: 15px;
   background-color: #555;
   color: #fff;
   text-align: center;
-  height: 350px;
+  height: 450px;
   width:80%;
   }
 
 #close-game-rules{
   width:20%;
-  left: 40%;
+  position: absolute;
   bottom: 10px;
+  left: 40%;
 }
 
 /*Game outcome pop up*/
