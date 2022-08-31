@@ -225,3 +225,6 @@ function playAgain(){
     document.getElementById("game-result").style.visibility = "hidden";
 
 }
+
+
+

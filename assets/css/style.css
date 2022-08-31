@@ -12,6 +12,7 @@ body {
   color: #000;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   font-family: 'Teko', sans-serif;
+  
 }
 
 .button-style{
@@ -48,9 +49,25 @@ header{
 header li{
   display:inline-block;
   text-decoration: none;
-  font-size: 12pt;
   padding: 10px;
 }
+
+/*Footer*/
+footer{
+  text-align: center;
+}
+footer li{
+  display:inline-block;
+  text-decoration: none;
+  padding: 10px 20px 0 20px;
+  font-size: 200%;
+}
+
+footer i{
+  color: #000;
+}
+
+
 
 /*Container carrousel*/
 #container{
@@ -199,16 +216,6 @@ progress[value]::-webkit-progress-value {
 
 /*Pop ups:*/
 /*Pop up rules*/
-
-/*
-.close-popup{
-  clear:both;
-  position:absolute;
-  padding: 5px;
-  border-radius: 5px;
-  text-align: center;
-}*/
-
 #rules-image{
   width: 65%;
   position: absolute;
@@ -264,27 +271,32 @@ progress[value]::-webkit-progress-value {
   position: absolute;
   width:30%;
   left: 35%;
-  bottom: 15px;
+  bottom: 75px;
   height: 50px;
   font-size: 16pt;
 }
 
 /*Feedback section*/
 #feedback-section{
+  font-size: 14pt;
   text-align: center;
+}
+
+#feedback-section h2{
+  
 }
 
 .input-form {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  border-radius: 5px;
-  background-color:#649B92;
+  background-color: rgba(255, 255, 255, 0.8);
+  border:#000 3pt solid;
   padding: 10px 0 10px 0;
   width:50%;
-  margin:10px 0 10px 0;
+
  }
 
  label{
-  padding: 10px 0 10px 0;
   
-  clear: both;
+  padding: 10px 0 10px 0;
+ 
  }
