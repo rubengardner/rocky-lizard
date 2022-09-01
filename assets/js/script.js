@@ -27,11 +27,6 @@ function battle(weapon1, weapon2){
        document.getElementById('result').innerText="Play again!";
        document.getElementById('result-text').innerText='DRAW';
 
-       let logoUser=  document.getElementById('user-display');
-       let logoEnemy = document.getElementById('enemy-display');  
-        logoUser.style.color ='#730041';
-        logoEnemy.style.color ='#730041';
-
     }
     //Weapon selection: ROCK
     else if(weapon1 === 'rock' && weapon2 === 'paper'){
@@ -143,8 +138,6 @@ function userWin(){
        
     }else{
     document.getElementById('result-text').innerText = 'VICTORY';
-    logoUser.style.color="#BD7500";
-    logoEnemy.style.color="#BBA5B0";
     }}
 
 function enemyWin(){
@@ -160,8 +153,6 @@ function enemyWin(){
         message.innerText="You lost!";
     }else{
         document.getElementById('result-text').innerText = 'DEFEAT';
-        logoUser.style.color="#BBA5B0";
-        logoEnemy.style.color="#BD7500";
     }}
 
 function displayUserWeapon(weapon){

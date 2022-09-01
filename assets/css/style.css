@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 /* Change default margin, padding and border to 0 and none */
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
   
   /* Style body, headers and Buttons */
-body {
+body{
   font-weight: 500;
   color: #000;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -71,14 +71,14 @@ footer i{
 
 /*Container carrousel*/
 #container{
-    background-color: white;
-    height: 500px;
-    width: 95vw;
-    max-width: 650px;
-    margin: auto ;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;
+  background-color: white;
+  height: 500px;
+  width: 95vw;
+  max-width: 650px;
+  margin: auto ;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;
 }
 
 
@@ -102,6 +102,26 @@ footer i{
     border-radius: 10px;
     background-color: rgba(240, 46, 170, 0.4);
   }
+
+  /*Home section*/
+#home-section{
+  text-align: center;
+}
+
+#home-section > h2{
+  position:absolute;
+  width: 40%;
+  left:30%;
+  top:20%;
+  font-size: 40pt;
+  
+}
+#home-section > div{
+  margin-top:200px;
+  font-size: 40pt;
+}
+
+
  
   /*Instruccions section */
 #instructions-section{
@@ -116,12 +136,12 @@ footer i{
 
 }
 #instructions-section p{
-  width:70%;
+  width:68%;
   position: absolute;
   top:60px;
   left: 15%;
+  padding: 5px;
   font-size: 14pt;
-  padding:10px;
   border:#000 solid 2px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -131,8 +151,12 @@ table{
   width: 70%;
   position: absolute;
   left: 15%;
+  padding: 5px;
   bottom:60px;
   font-size: 14pt;
+  background-color: rgba(255, 255, 255, 0.5);
+  border:#000 solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .user-style{
@@ -194,7 +218,15 @@ table{
   
 }
 
+#open-game-rules{
+  background-color: #730041;
+  
+}
 
+#open-game-rules strong{
+ color: #fff;
+  
+}
 
 
 
@@ -280,10 +312,6 @@ progress[value]::-webkit-progress-value {
 #feedback-section{
   font-size: 14pt;
   text-align: center;
-}
-
-#feedback-section h2{
-  
 }
 
 .input-form {
